@@ -12,6 +12,10 @@ class Home extends BaseController {
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('pswd');
 
+        $db         = \Config\Database::connect();
+        $sql        = 'INSERT INTO tbluser (name, email, password) VALUES (' . $db->escape($name) . ', ' . $db->escape($email) . ', ' . $db->escape($password).')';
+        $db->query($sql);
+
         echo "email".$email."<br>"."password:".$password;
         //return view('success');*
     }
