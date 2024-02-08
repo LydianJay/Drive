@@ -1,4 +1,4 @@
-# Online File Storage
+# Inventory Management System
     Practice project using Code Igniter 4(php, html, css, js), Bootstrap 5, and JQuery
 
 ## Setup - Running Locally
